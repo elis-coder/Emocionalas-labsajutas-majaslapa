@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head> 
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emocionālā labsajūta</title>
+    <script>
+        function showContent(id) {
+          document.querySelectorAll('.content').forEach(el => el.style.display = 'none');
+          document.getElementById(id).style.display = 'block';
+          document.querySelectorAll('.navbar a').forEach(el => el.classList.remove('active'));
+          document.querySelector(`.navbar a[href="#${id}"]`).classList.add('active');
+        }
+      </script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#info" class="active" onclick="showContent('info')">Informācija</a>
+        <a href="#" onclick="showContent('test')">Tests</a>
+        <a href="#" onclick="showContent('rekomendacijas')">Rekomendācijas</a>
+        <a href="#kontakti" onclick="showContent('kontakti')">Kontakti</a>
+        <a href="#discord" onclick="showContent('discord')">Discord serveris</a>
+    </div>
+    <h1>Emocionālā labsajūta</h1>
+    <div id="info" class="content">
+    <h2 class="section-title">Kas ir emocionālā labsajūta un kāpēc tā ir svarīga?</h2>
+    <p style="max-width: 800px; margin: 0 auto 0 50px; text-align: left; font-size: 18px; line-height: 1.6;">
+       <strong>Kas ir emocionālā labsajūta?</strong><br>
+        Emocionālā labsajūta ir cilvēka spēja apzināties, izprast un pārvaldīt savas emocijas ikdienā. Tā ietver iekšēju līdzsvaru, pašapziņu, emocionālo stabilitāti un spēju veidot veselīgas attiecības ar sevi un citiem. Tā nav pastāvīgs stāvoklis – tā mainās un ir atkarīga no dažādiem dzīves apstākļiem, notikumiem un mūsu attieksmes pret tiem.
+
+        <br><br>
+        <strong>Kāpēc emocionālā labsajūta ir jāsaudzē?</strong><br>
+        Mūsu emocionālais stāvoklis tieši ietekmē to, kā mēs domājam, jūtamies un rīkojamies. Neuzmanība pret emocionālo labsajūtu var novest pie ilgstoša stresa, trauksmes, izdegšanas vai pat depresijas. Regulāra emocionālās veselības ignorēšana var ietekmēt arī fizisko veselību, attiecības, darba spējas un kopējo dzīves kvalitāti. Tieši tāpēc tā ir jākopj tikpat rūpīgi kā fiziskā veselība – caur atpūtu, pašrefleksiju, veselīgu komunikāciju un palīdzības meklēšanu, kad tā nepieciešama.
+
+        <br><br>
+        <strong>Kāpēc emocionālā labsajūta ir svarīga?</strong><br>
+        Veselīga emocionālā labsajūta palīdz cilvēkam justies apmierinātam ar dzīvi, saglabāt mieru stresa brīžos, pieņemt lēmumus ar skaidru prātu un veidot cieņpilnas attiecības ar citiem. Tā palīdz attīstīt empātiju, iekšējo līdzsvaru un izpratni par sevi. Emocionāli veselīgs cilvēks ir elastīgāks pārmaiņām, spēj veiksmīgāk pārvarēt grūtības un dzīvot pilnvērtīgāku, jēgpilnāku dzīvi.
+
+        <br><br>
+        Šī sadaļa ir izveidota, lai palīdzētu Tev labāk saprast, cik svarīga ir emocionālā labsajūta un kā Tu vari par to parūpēties ikdienā.
+    </p>
+</div>
+</div>
+    <div id="test" class="content">
+        <h2 class="section-title">Emocionālās labsajūtas testi</h2>
+        <div style="text-align: left; margin: 0 auto;">
+            <h3>🧠 1. Tests: Kāds ir Tavs emocionālais stāvoklis?</h3>
+            <p>Šis tests, ko izstrādājis britu psihologs Pips Vilsons, sākotnēji tika veidots skolēnu emocionālās adaptācijas pārbaudīšanai, bet vēlāk pierādījās, ka tas ir noderīgs arī pieaugušajiem. Ar tā palīdzību iespējams noteikt savu pašreizējo un vēlamo emocionālo stāvokli.<br><em>Avots: LA.LV</em></p>
+            <a href="https://www.la.lv/tests-kads-ir-tavs-emocionalais-stavoklis-20-citi-testi/" target="_blank"><button class="test-button">Tests</button></a>
+    
+            <h3>📊 2. Tests: Cik tālu tu esi no emocionālas izdegšanas?</h3>
+<p>Šis tests palīdz novērtēt, vai esi pakļauts emocionālās izdegšanas riskam, īpaši darba vidē. Atbildot uz jautājumiem par ikdienas sajūtām un darba pieredzi, vari saprast savu pašreizējo stāvokli un nepieciešamību pēc atpūtas vai pārmaiņām.<br><em>Avots: LA.LV</em></p>
+<a href="https://www.la.lv/testi/tests-cik-talu-tu-esi-no-emocionalas-izdegsanas" target="_blank"><button class="test-button">Tests</button></a>
+    
+            <h3>💬 3. Tests: Cik daudz tu zini par mentālo veselību?</h3>
+            <p>Šis tests palīdz novērtēt, cik veiksmīgi tu tiec galā ar stresu un spraigām situācijām. Tas arī palīdz noteikt, cik lielā mērā cilvēks ir iekšēji apmierināts ar sevi un kā viņš to saskata, kā citi to redz.<br><em>Avots: Spoki.lv</em></p>
+            <a href="https://spoki.lv/testi/Tests-Cik-daudz-tu-zini-par-mentalo/901924" target="_blank"><button class="test-button">Tests</button></a>
+    
+            <h3>📊 4. Tests: Kā iet? Normāli.</h3>
+            <p>Atbildot uz jautājumu "Kā iet?", bieži mēdzam aizslēpties aiz ērtas un neko nepasakošas atbildes "Normāli." Lai noskaidrotu, kā tev patiešām klājas, šis tests palīdzēs novērtēt tavu patieso emocionālo pašsajūtu.<br><em>Avots: LSM.lv</em></p>
+            <a href="https://www.lsm.lv/raksts/dzive--stils/veseliba/03.04.2025-ka-iet-normali-testa-noskaidro-savu-patieso-emocionalo-passajutu.a584363/" target="_blank"><button class="test-button">Tests</button></a>
+    
+            <h3>🧩 5. Emocionālās empātijas tests</h3>
+            <p>Šis tests palīdzēs noteikt, cik attīstīta ir tava spēja just līdzi citiem cilvēkiem, kas ir būtiska emocionālās inteliģences sastāvdaļa.<br><em>Avots: Psycho-test.org</em></p>
+            <a href="https://psycho-test.org/lv/test/emotional-empathy.html" target="_blank"><button class="test-button">Tests</button></a>
+        </div>
+    </div>
+    <div id="rekomendacijas" class="content">
+        <h2 class="section-title">Kā uzlabot emocionālo stāvokli?</h2>
+        <p class="subheading">Veidi kā uzlabot emocionālo labsajūtu:</p>
+        <div class="recommendation-list">
+            <ul>
+                <li>Praktizējiet pašaprūpes rutīnas, piemēram, vingrinājumus vai meditāciju, vai meklējiet atbalstu no uzticamiem draugiem, ģimenes vai garīgās veselības speciālistiem.</li>
+                <li>Uzturiet kontaktu ar mīļajiem un veidojiet veselīgas sociālās attiecības.</li>
+                <li>Apsveriet iespēju ieplānot tikšanos ar terapeitu vai psihiatru, lai pārrunātu emocionālās bažas, ar ko saskaraties ikdienā. Tas nodrošinās drošu telpu, lai izpētītu savas jūtas un rastu risinājumu problēmām.</li>
+                <li>Šajā periodā praktizējiet veidot dienasgrāmatu, lai emocijas un negatīvās domas neuzkrātos.</li>
+                <li>Veltiet laiku, lai pateiktos gan par dienu, ko piedzīvojat, gan atbalstošajiem draugiem un ģimenei, kas ikdienā ir blakus.</li>
+                <li>Izmēģiniet elpošanas vingrinājumus brīžos, kad jūtaties satriekti.</li>
+            </ul>
+        </div>
+    </div>
+    <div id="kontakti" class="content">
+    <h2 class="section-title">Kontakti – Palīdzība emocionālās veselības jautājumos</h2>
+    <p class="subheading">Ja jūties slikti vai vienkārši nepieciešams atbalsts, sazinies ar kādu no šīm organizācijām:</p>
+
+    <ul style="text-align: left; max-width: 800px; margin: 0 auto 0 50px; font-size: 18px; line-height: 1.6;">
+        <li>
+            <strong>📞 Vienotais krīžu tālrunis – 116123</strong><br>
+            <em>Darbojas 24/7. Anonīms un bezmaksas atbalsts visiem.</em><br>
+            <a href="https://www.vmnvd.gov.lv/lv/vienotais-bezmaksas-krizu-talrunis-116123" target="_blank">Vairāk informācijas</a>
+        </li><br>
+
+        <li>
+            <strong>💬 Skalbes krīžu un konsultāciju centrs – 67222922 / 27722292</strong><br>
+            <em>Diennakts emocionālā palīdzība un psiholoģiskais atbalsts.</em><br>
+            <a href="https://www.skalbes.lv/par-mums/" target="_blank">Vairāk informācijas</a>
+        </li><br>
+
+        <li>
+            <strong>🧒 Bērnu un pusaudžu uzticības tālrunis – 116111</strong><br>
+            <em>Palīdzība bērniem un jauniešiem 24/7. Iespēja runāt anonīmi.</em><br>
+            <a href="https://www.izm.gov.lv/lv/atbalsts-nedrosa-bridi" target="_blank">Vairāk informācijas</a>
+        </li><br>
+
+        <li>
+            <strong>👥 Pusaudžu resursu centrs – 25737363</strong><br>
+            <em>Atbalsts jauniešiem no 12 līdz 25 gadiem. Bezmaksas konsultācijas un terapija.</em><br>
+            <a href="https://mot.lv/motivacijas-menesis/mentala-veseliba/" target="_blank">Vairāk informācijas</a>
+        </li><br>
+
+        <li>
+            <strong>👂 Latvijas Psihologu biedrība – 26468079</strong><br>
+            <em>Konsultācijas un psiholoģiska palīdzība ikvienam katru dienu no 9:00 līdz 21:00.</em><br>
+            <a href="https://www.izm.gov.lv/lv/atbalsts-nedrosa-bridi" target="_blank">Vairāk informācijas</a>
+        </li>
+    </ul>
+</div>
+    <div id="discord" class="content">
+        <h2 class="section-title">Discord serveri emocionālajam atbalstam</h2>
+        
+        <div style="text-align: left; margin: 0 auto 0 50px; max-width: 800px;">
+    
+            <h3>🌱 Mental Health Support Community</h3>
+            <p>Viens no lielākajiem emocionālās veselības serveriem ar vairāk nekā 12 000 dalībnieku. Piedāvā moderētu vidi, kur vari droši dalīties ar savām sajūtām, saņemt iedrošinājumu un piekļūt resursiem par emocionālo labsajūtu.</p>
+            <a href="https://discord.com/invite/mhsc" target="_blank">
+                <button style="background-color: #4CAF50; color: white; padding: 8px 16px; border: none; border-radius: 5px; cursor: pointer;">Pievienoties</button>
+            </a>
+    
+            <h3>💬 Fight Through Mental Health</h3>
+            <p>Droša vide ar vairāk nekā 17 000 dalībnieku, kur vari runāt par depresiju, trauksmi un citiem garīgās veselības izaicinājumiem. Serverī ir tematiskie kanāli un atbalsta grupas.</p>
+            <a href="https://discord.com/invite/ftmh" target="_blank">
+                <button style="background-color: #4CAF50; color: white; padding: 8px 16px; border: none; border-radius: 5px; cursor: pointer;">Pievienoties</button>
+            </a>
+    
+            <h3>🧠 Depressions Antidote</h3>
+            <p>Lielākais emocionālās veselības serveris ar vairāk nekā 100 000 dalībnieku. Apvieno garīgā atbalsta vidi ar interesēm, piemēram, mākslu, mūziku un studijām. Ideāla vieta, kur justies saprastam.</p>
+            <a href="https://discord.com/invite/help" target="_blank">
+                <button style="background-color: #4CAF50; color: white; padding: 8px 16px; border: none; border-radius: 5px; cursor: pointer;">Pievienoties</button>
+            </a>
+    
+        </div>
+    </div>
+</body>
+</html>
